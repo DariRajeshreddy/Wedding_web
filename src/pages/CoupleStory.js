@@ -3,7 +3,7 @@ import './CoupleStory.css';
 export default function CoupleStory() {
     const groomName = "Samual";
     const brideName = "Swapna";
-    const whatsappNumber = "7842777235";
+    const whatsappNumber = "9848680844";
     const message = encodeURIComponent(`Hi ${groomName} & ${brideName}, Wishing you a joyful and blessed married life! 💐🎊`);
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`;
 

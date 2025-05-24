@@ -20,19 +20,14 @@
 
 .music-toggle-btn {
   position: fixed;
-  bottom: 30px;
+  bottom: 20px;
   right: 30px;
-  background: rgba(255, 255, 255, 0.7);
-  border: none;
+  /* background: rgba(255, 255, 255, 0.7); */
   padding: 10px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   cursor: pointer;
   z-index: 999;
   font-size: 1.5rem;
-  color: #333;
-  transition: background 0.3s ease;
-}
-
-.music-toggle-btn:hover {
-  background: rgba(255, 255, 255, 0.9);
+  color: #120101;
+  /* transition: background 0.3s ease; */
 }

@@ -7,6 +7,7 @@ import './App.css';
 import Home from './pages/Home';
 import { FaVolumeUp, FaVolumeMute } from 'react-icons/fa';
 import FamilySection from './pages/FamilyDetails';
+import VenueDetails from './pages/VenueDetails';
 
 export default function App() {
   const audioRef = useRef(null);
@@ -67,6 +68,7 @@ export default function App() {
           <CoupleStory />
           <FamilySection />
           <Gallery />
+          <VenueDetails />
         </main>
       </div>
     </div>

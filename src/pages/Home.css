@@ -36,8 +36,8 @@
 
 /* Couple Image */
 .couple {
-    width: 110%;
-    height: 110%;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     /* 'contain' prevents cropping */
     animation: bounceIn 1.5s ease-out;
@@ -51,6 +51,8 @@
 
 /* Decorative Frame Image */
 .decor-frame {
+    display: flex;
+    justify-content: center;
     position: absolute;
     top: 0%;
     left: 200%;
@@ -58,6 +60,8 @@
     height: 100%;
     object-fit: contain;
     z-index: 1;
+    border: 1px solid #e5d335;
+    border-radius: 100%;
     pointer-events: none;
     animation: bounceIn 1.5s ease-out;
     transition: transform 0.3s ease;

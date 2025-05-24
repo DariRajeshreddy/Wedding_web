@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
-import coupleImage from '../assets/images/CoupleHero.png';
-import frames from "../assets/images/finalFrame.png";
+import coupleImage from "../assets/images/Wedding_Image.png";
+import frames from "../assets/images/ssframe.png";
 
 // Set the wedding date to June 5, 2025
 const weddingDate = new Date('2025-06-05');

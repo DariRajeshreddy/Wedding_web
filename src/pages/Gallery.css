@@ -20,7 +20,7 @@
 
 .gallery-grid img {
     width: 100%;
-    height: 200px;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -188,4 +188,32 @@
 
 .modal-nav-btn.right {
     right: 1rem;
+}
+
+.gallery-grid {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+@media (min-width: 769px) {
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+    }
+
+    .gallery-img {
+        width: 100%;
+        height: 400px;
+    }
 }
