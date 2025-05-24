@@ -8,6 +8,8 @@ import Home from './pages/Home';
 import { FaVolumeUp, FaVolumeMute } from 'react-icons/fa';
 import FamilySection from './pages/FamilyDetails';
 import VenueDetails from './pages/VenueDetails';
+import dev_logo from "../src/assets/images/dev_logo.png";
+
 
 export default function App() {
   const audioRef = useRef(null);
@@ -71,6 +73,12 @@ export default function App() {
           <VenueDetails />
         </main>
       </div>
+      <footer className="custom-footer">
+        <div className="footer-content">
+          {/* <img src={dev_logo} alt="Developer Logo" className="footer-logo" /> */}
+          <p>Developed by <strong>RajeshReddy</strong></p>
+        </div>
+      </footer>
     </div>
   );
 }

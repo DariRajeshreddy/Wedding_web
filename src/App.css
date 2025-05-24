@@ -18,6 +18,38 @@
   z-index: 1;
 }
 
+.custom-footer {
+
+  padding: 1rem 0;
+  color: #FFD700;
+  /* gold text */
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.6rem;
+  margin-top: 2rem;
+  /* border-top: 1px solid rgba(255, 255, 255, 0.1); */
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px
+}
+
+.footer-logo {
+  width: 110px;
+  height: 110px;
+  margin-bottom: 0.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+}
+
+.custom-footer strong {
+  font-weight: 600;
+}
+
 .music-toggle-btn {
   position: fixed;
   bottom: 20px;

@@ -12,7 +12,7 @@ const FamilySection = () => {
                     {/* Bride's Family */}
                     <div className="family-box">
                         <img src={fam1} alt="Bride's Family" />
-                        <h3>Samual's Family</h3>
+                        <h3>Samuel's Family</h3>
                         <p><strong>John Smith</strong> - Father</p>
                         <p><strong>Mary Smith</strong> - Mother</p>
                         <p><strong>Emma Smith</strong> - Sister</p>

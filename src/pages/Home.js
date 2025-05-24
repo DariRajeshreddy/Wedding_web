@@ -23,6 +23,7 @@ function Home() {
 
     return (
         <>
+            <h2 className="invitation-heading">Wedding-Invitation</h2>
             <div className="frame-overlay-container">
                 <div className="couple-wrapper">
                     <img src={coupleImage} alt="Decorative Frame" className="decor-frame" />
@@ -42,6 +43,7 @@ function Home() {
                 <div className="countdown-number">{daysToGo}</div>
                 <div className="countdown-label">Days to Go</div>
             </div>
+
         </>
     );
 }
