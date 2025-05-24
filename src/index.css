@@ -1,0 +1,16 @@
+/* Basic global styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('../src/assets/images/coupleBackGround.jpg');
+  /* Put your image in the public folder */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

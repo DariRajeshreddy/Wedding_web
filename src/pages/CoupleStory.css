@@ -1,0 +1,38 @@
+.couple-story {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    color: #fefefe;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+}
+
+.couple-story h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #ffb6b9;
+    margin-bottom: 30px;
+}
+
+.couple-story p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.couple-story strong {
+    color: #ffdde1;
+    font-weight: 600;
+}
+
+.couple-story a button:hover {
+    background-color: #1ebe5d;
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}

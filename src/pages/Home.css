@@ -1,0 +1,306 @@
+/* Main Container */
+.home-container {
+    display: flex;
+    height: 100vh;
+    background: transparent;
+}
+
+/* Image Section Layout */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: transparent;
+}
+
+/* Frame with Couple Image Inside */
+.frame-overlay-container {
+    position: relative;
+    width: 30vw;
+    max-width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Wrapper to Apply Padding Between Image and Frame */
+.couple-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    /* Creates space between image and frame */
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+/* Couple Image */
+.couple {
+    width: 110%;
+    height: 110%;
+    object-fit: contain;
+    /* 'contain' prevents cropping */
+    animation: bounceIn 1.5s ease-out;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.couple:hover {
+    transform: scale(1.05);
+}
+
+/* Decorative Frame Image */
+.decor-frame {
+    position: absolute;
+    top: 0%;
+    left: 200%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+    pointer-events: none;
+    animation: bounceIn 1.5s ease-out;
+    transition: transform 0.3s ease;
+    /* Prevents click blocking */
+}
+
+.decor-frame:hover {
+    transform: scale(1.05);
+}
+
+/* Text Overlay on Top */
+.frame-text-overlay {
+    position: absolute;
+    top: 38%;
+    left: -50%;
+    transform: translateX(50%);
+    text-align: center;
+    z-index: 3;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Animated Text */
+.animated-text {
+    margin: 0;
+    font-size: 2rem;
+    opacity: 0;
+    font-family: 'Great Vibes', cursive;
+    animation: slideUp 3s ease-out forwards;
+}
+
+.animated-text.bride {
+    /* font-family: 'serif', 'Playfair Display', 'Georgia', 'serif'; */
+    font-size: 48px;
+    font-weight: normal;
+    color: #ffff;
+    position: absolute;
+    top: -30%;
+    left: 10%;
+    /* deep romantic red, optional */
+    text-align: center;
+    animation-delay: 1.3s;
+}
+
+.animated-text.weds {
+    /* font-family: 'Great Vibes', cursive; */
+    color: #e5d335;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    font-size: 2.5rem;
+    animation-delay: 1.5s;
+}
+
+.animated-text.groom {
+    font-size: 48px;
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    font-weight: normal;
+    color: #ffff;
+    text-align: center;
+    animation-delay: 1.8s;
+}
+
+/* Countdown Text */
+.countdown-wrapper {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.countdown-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    color: #ffff;
+}
+
+.countdown-label {
+    font-family: 'Great Vibes', cursive;
+    font-size: 32px;
+    color: #80b3e7;
+    margin-top: -10px;
+}
+
+/* Animations */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateX(-40px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(1.05) translateX(10px);
+    }
+
+    80% {
+        transform: scale(0.98);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .frame-overlay-container {
+        width: 100%;
+        /* Wider container for better visibility */
+        max-width: 90vw;
+        flex-direction: column;
+        /* Stack elements vertically */
+        align-items: center;
+    }
+
+    .couple-wrapper {
+        width: 100%;
+        padding: 8px;
+        /* Slightly reduce padding for mobile */
+    }
+
+    .couple {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        /* Ensure proper scaling */
+    }
+
+    .decor-frame {
+        position: relative;
+        /* Change to relative to stack below image */
+        top: 10%;
+        display: flex;
+        align-items: center;
+        left: 0;
+        width: 100%;
+        height: auto;
+        /* Space between image and frame */
+        z-index: 1;
+        /* Lower z-index to avoid overlap issues */
+    }
+
+    .frame-text-overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        /* Stack text below frame */
+        top: 72%;
+        left: 0;
+        transform: none;
+        /* Remove translation */
+        width: 100%;
+        padding: 0.5rem;
+        /* Space between frame and text */
+        text-align: center;
+    }
+
+    .home-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+        /* Elegant light gradient */
+        text-align: center;
+        padding: 10px 0;
+        z-index: 20;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .home-header h1 {
+        font-family: 'Great Vibes', cursive;
+        font-size: 2rem;
+        color: #6a1b9a;
+        /* Royal Purple */
+        margin: 0;
+    }
+
+    .names-highlight {
+        font-family: 'Georgia', serif;
+        font-size: 1.5rem;
+        color: #333;
+        margin-top: 5px;
+    }
+
+
+    .animated-text.weds {
+        position: relative;
+        /* Change to relative to stack below image */
+        top: 20%;
+        left: 0%;
+        display: flex;
+        font-size: 3.2rem;
+    }
+
+    .animated-text.groom {
+        font-size: 48px;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        font-weight: normal;
+        color: #ffff;
+        text-align: center;
+        animation-delay: 1.8s;
+    }
+
+    .animated-text.bride {
+        /* font-family: 'serif', 'Playfair Display', 'Georgia', 'serif'; */
+        font-size: 48px;
+        font-weight: normal;
+        color: #ffff;
+        position: absolute;
+        top: -30%;
+        left: 20%;
+        /* deep romantic red, optional */
+        text-align: center;
+        animation-delay: 1.3s;
+    }
+
+    .countdown {
+        font-size: 1rem;
+    }
+}

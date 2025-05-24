@@ -1,0 +1,38 @@
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  /* Ensures it fills horizontally */
+  height: 100vh;
+  /* Ensures it fills vertically */
+  object-fit: cover;
+  /* Crops and fills like background-size: cover */
+  z-index: -1;
+  pointer-events: none;
+  /* Optional: prevent interference with clicks */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.music-toggle-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+  font-size: 1.5rem;
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+.music-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
